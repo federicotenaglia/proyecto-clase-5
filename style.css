@@ -50,13 +50,19 @@ section{
     background-color: beige;
     padding: 20px;
     /* Display: flex cambia el eje principal */
-    display: flex;
+    /* display: flex; */
     /*justify-content: content; aplica ene el eje principal */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /*alain-items: center; aplica ene el eje principal */
-    align-items: center;
+    /* align-items: center; */
     /* viewport height */
-    height: 100vh;
+    min-height: 100vh;
+    /* grid -> define una grlla que tendra como propiedad una fila y una columna */
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+    /* gap es una propiedad que sirve solo para emlentos flexibles con grid*/
+    gap: 20px;
 
 }
 
@@ -66,7 +72,7 @@ div{
     border-radius: 10px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 400px;
+    
     
 }
 
