@@ -3,3 +3,98 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h1 {
+    /* fallback , prueba cual de las tres Courier New', Courier, monospace. Si no funciona la 1 va por la 2, etc*/
+    font-family:'Courier New', Courier, monospace ;
+    font-size: 20px;
+
+}
+
+/* p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 12px;
+    font-weight: lighter;
+    /* line-height: 1.6; 
+    font-style: italic;
+} */
+
+/* Display -> como se comporta un elemento en el flujo del documento */
+
+/* display block -> ocupa el 100% del ancho disponible del elemento padre! En este caso seria el body*/
+
+h1 {
+    background-color: violet;
+}
+
+/* button{
+    background-color: yellow;
+    display: inline;
+} */
+
+span{
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+    background-color: yellowgreen;
+}
+
+/* display: flex -> manejar: filas o columnas */
+/* UN CONTENEROR FLEXIBLE PUEDE REUBICAR LOS ELEMNTOS HIJOS*/
+
+
+/* display: flex -> grillas: filas y columnas */
+
+section{
+    background-color: beige;
+    padding: 20px;
+    /* Display: flex cambia el eje principal */
+    display: flex;
+    /*justify-content: content; aplica ene el eje principal */
+    justify-content: space-between;
+    /*alain-items: center; aplica ene el eje principal */
+    align-items: center;
+    /* viewport height */
+    height: 100vh;
+
+}
+
+div{
+    background-color: rgb(240, 248, 255, 0.768);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 400px;
+    
+}
+
+div h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div h3 {
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+p{
+    color:gray ;
+    font-size: 15px;
+    margin-top: 10px;
+
+}
+
+div button {
+    border: none;
+    background-color: aqua;
+    padding: 8px 16px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
